@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars Kolonisi | Ana Sayfa</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="yildizlar"></div>
+
+    <div class="ust-kisim">
+        <a class="portal-mini" href="../index.html">← droolbonded</a>
+        <h1>MARS KOLONİSİ PROJESİ</h1>
+        <div class="menu">
+            <a href="index.html" class="aktif">Ana Sayfa</a>
+            <a href="galeri.html">Mars Galerisi</a>
+            <a href="basvuru.html">Koloniye Katıl!</a>
+        </div>
+    </div>
+
+    <div class="kutu">
+        <h2>Kızıl Gezegene Yolculuk Başlıyor</h2>
+        <p>İnsanlığın yeni evi Mars'a hoş geldiniz. 2030 yılında başlayacak olan ilk sivil kolonizasyon projesi için hazırlıklarımız tamamlandı. Yeni bir dünyada yeni bir başlangıç yapmak ister misiniz?</p>
+        <p>Bilim insanları, mühendisler ve cesur kaşifler aranıyor!</p>
+        <a href="basvuru.html" class="buton">Koloniye Katıl</a>
+    </div>
+
+    <main class="mars-bilgi">
+        <div class="section-heading">
+            <span class="section-kicker">DOSYA 04 / KIZIL GEZEGEN</span>
+            <h2>Mars'ı tanıyın</h2>
+            <p>Dünya'ya en çok benzeyen komşularımızdan biri olan Mars, gelecekteki keşifler için dev bir laboratuvar niteliğinde.</p>
+        </div>
+
+        <div class="istatistik-grid">
+            <div class="istatistik"><strong>225 milyon km</strong><span>Ortalama uzaklık</span></div>
+            <div class="istatistik"><strong>24 saat 37 dk</strong><span>Bir Mars günü</span></div>
+            <div class="istatistik"><strong>-63°C</strong><span>Ortalama yüzey sıcaklığı</span></div>
+            <div class="istatistik"><strong>2 uydu</strong><span>Phobos ve Deimos</span></div>
+        </div>
+
+        <div class="bilgi-grid">
+            <article class="bilgi-panel"><span class="bilgi-numara">01</span><h3>İnce atmosfer</h3><p>Mars atmosferinin büyük bölümü karbondioksitten oluşur. Atmosfer Dünya'nınkinin yüzde birinden daha ince olduğu için yüzeyde koruyucu koloniler gerekir.</p></article>
+            <article class="bilgi-panel"><span class="bilgi-numara">02</span><h3>Geçmişte su vardı</h3><p>Kuru nehir yatakları, deltalar ve kutup buzulları Mars'ın geçmişte sıvı su barındırdığını gösterir. Bu izler yaşam araştırmalarının merkezindedir.</p></article>
+            <article class="bilgi-panel"><span class="bilgi-numara">03</span><h3>Dev volkanlar</h3><p>Olympus Mons, Güneş Sistemi'nin bilinen en büyük volkanıdır. Mars'ın düşük yerçekimi, bu dev yapıların oluşmasına izin vermiştir.</p></article>
+            <article class="bilgi-panel"><span class="bilgi-numara">04</span><h3>Koloni için öncelikler</h3><p>İlk ekipler su buzu çıkarma, enerji üretme, radyasyondan korunma ve kapalı tarım sistemleri üzerine çalışacak.</p></article>
+        </div>
+    </main>
+
+    <section class="flight-console" aria-labelledby="flight-title">
+        <div class="console-heading">
+            <div>
+                <span class="section-kicker">INTERPLANETARY NAVIGATION / SIM-01</span>
+                <h2 id="flight-title">Mars'a uçuşu yönet</h2>
+            </div>
+            <span class="live-indicator"><i></i> SIMÜLASYON AKTİF</span>
+        </div>
+
+        <div class="mission-grid">
+            <div class="mission-map" aria-label="Dünya'dan Mars'a uçuş rotası">
+                <div class="map-grid"></div>
+                <div class="orbit-line earth-line"><span class="orbit-dot"></span></div>
+                <div class="orbit-line mars-line"><span class="orbit-dot"></span></div>
+                <div class="route-line"><span class="route-progress"></span><span class="ship-marker">◆</span></div>
+                <div class="world-node"><span>DÜNYA</span><b></b></div>
+                <div class="mars-node"><span>MARS</span><b></b></div>
+                <div class="map-readout">TRAYEKTÖR <strong id="trajectoryLabel">TRANSFER YÖRÜNGESİ</strong></div>
+            </div>
+
+            <div class="mission-panel">
+                <div class="mission-status"><span>DURUM</span><strong id="missionStatus">BEKLEMEDE</strong></div>
+                <div class="meter-block">
+                    <div><span>YAKIT REZERVİ</span><strong id="fuelValue">100%</strong></div>
+                    <div class="meter"><span id="fuelMeter"></span></div>
+                </div>
+                <div class="telemetry-grid">
+                    <div><span>MESAFE</span><strong id="distanceValue">225.0M km</strong></div>
+                    <div><span>HIZ</span><strong id="speedValue">0.0 km/s</strong></div>
+                    <div><span>UÇUŞ SÜRESİ</span><strong id="timeValue">00:00</strong></div>
+                    <div><span>GÜZERGAH</span><strong id="routeValue">HOHMANN</strong></div>
+                    <div><span>İRTİFA</span><strong id="altitudeValue">0 km</strong></div>
+                    <div><span>BAŞ YÖNÜ</span><strong id="headingValue">090°</strong></div>
+                </div>
+                <div class="control-group">
+                    <label for="flightMode">Navigasyon protokolü</label>
+                    <select id="flightMode">
+                        <option value="hohmann">Hohmann transferi</option>
+                        <option value="direct">Doğrudan itki</option>
+                        <option value="eco">Ekonomik seyir</option>
+                    </select>
+                </div>
+                <div class="flight-inputs">
+                    <label for="throttleControl">Gaz <output id="throttleValue">60%</output></label>
+                    <input id="throttleControl" type="range" min="0" max="100" value="60">
+                    <div class="heading-controls"><button type="button" id="yawLeft" disabled>← Yön</button><button type="button" id="yawRight" disabled>Yön →</button></div>
+                </div>
+                <div class="flight-actions">
+                    <button type="button" class="flight-primary" id="launchButton">Görevi başlat</button>
+                    <button type="button" id="thrustButton" disabled>İtki ver</button>
+                    <button type="button" id="brakeButton" disabled>Yavaşla</button>
+                    <button type="button" id="autopilotButton" disabled>Otopilot</button>
+                    <button type="button" class="flight-reset" id="resetFlightButton">Sıfırla</button>
+                </div>
+                <p class="mission-log" id="missionLog">Kontrol odası hazır. Görevi başlatıp rotanı seç.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="alt-bilgi">
+        <p>Tasarımcı: droolbonded | Tüm Hakları Saklıdır © 2026</p>
+    </div>
+
+    <script src="muzik.js"></script>
+</body>
+</html>
