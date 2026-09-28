@@ -1,119 +1,73 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mars Kolonisi | Ana Sayfa</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta name="description" content="HTML5 anlamsal etiketleri ve yapay zeka hakkında teknoloji blogu.">
+    <title>Geleceğin Teknolojileri | Teknoloji Blogu</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="yildizlar"></div>
-
-    <div class="ust-kisim">
-        <a class="portal-mini" href="../index.html">← droolbonded</a>
-        <h1>MARS KOLONİSİ PROJESİ</h1>
-        <div class="menu">
-            <a href="index.html" class="aktif">Ana Sayfa</a>
-            <a href="galeri.html">Mars Galerisi</a>
-            <a href="basvuru.html">Koloniye Katıl!</a>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="index.html">Geleceğin Teknolojileri</a>
+            <nav aria-label="Ana menü">
+                <a href="#anasayfa">Ana Sayfa</a>
+                <a href="#yapay-zeka">Yapay Zeka</a>
+                <a href="#robotik">Robotik</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="kutu">
-        <h2>Kızıl Gezegene Yolculuk Başlıyor</h2>
-        <p>İnsanlığın yeni evi Mars'a hoş geldiniz. 2030 yılında başlayacak olan ilk sivil kolonizasyon projesi için hazırlıklarımız tamamlandı. Yeni bir dünyada yeni bir başlangıç yapmak ister misiniz?</p>
-        <p>Bilim insanları, mühendisler ve cesur kaşifler aranıyor!</p>
-        <a href="basvuru.html" class="buton">Koloniye Katıl</a>
-    </div>
+    <main id="anasayfa" class="layout">
+        <article class="article">
+            <header class="article-header">
+                <p class="eyebrow">Teknoloji Blogu</p>
+                <h1>Yapay Zeka Dünyayı Nasıl Değiştiriyor?</h1>
+                <p class="meta">Yazar: Bilişim Sınıfı | Tarih: <time datetime="2024-10-15">15 Ekim 2024</time></p>
+            </header>
 
-    <main class="mars-bilgi">
-        <div class="section-heading">
-            <span class="section-kicker">DOSYA 04 / KIZIL GEZEGEN</span>
-            <h2>Mars'ı tanıyın</h2>
-            <p>Dünya'ya en çok benzeyen komşularımızdan biri olan Mars, gelecekteki keşifler için dev bir laboratuvar niteliğinde.</p>
-        </div>
+            <figure class="hero-figure">
+                <div class="hero-visual" role="img" aria-label="Yapay zeka ve dijital ağları temsil eden görsel">
+                    <span class="hero-orbit hero-orbit-one"></span>
+                    <span class="hero-orbit hero-orbit-two"></span>
+                    <span class="hero-core">AI</span>
+                </div>
+                <figcaption>Şekil 1: Yapay zekanın derin öğrenme ağı temsili.</figcaption>
+            </figure>
 
-        <div class="istatistik-grid">
-            <div class="istatistik"><strong>225 milyon km</strong><span>Ortalama uzaklık</span></div>
-            <div class="istatistik"><strong>24 saat 37 dk</strong><span>Bir Mars günü</span></div>
-            <div class="istatistik"><strong>-63°C</strong><span>Ortalama yüzey sıcaklığı</span></div>
-            <div class="istatistik"><strong>2 uydu</strong><span>Phobos ve Deimos</span></div>
-        </div>
+            <p>Günümüzde yapay zeka sadece bir bilim kurgu fantezisi değil, <strong>hayatımızın tam merkezinde</strong> yer alan bir gerçekliktir. Özellikle <em>makine öğrenimi</em> sayesinde tıp, eğitim ve mühendislik çağ atlıyor.</p>
 
-        <div class="bilgi-grid">
-            <article class="bilgi-panel"><span class="bilgi-numara">01</span><h3>İnce atmosfer</h3><p>Mars atmosferinin büyük bölümü karbondioksitten oluşur. Atmosfer Dünya'nınkinin yüzde birinden daha ince olduğu için yüzeyde koruyucu koloniler gerekir.</p></article>
-            <article class="bilgi-panel"><span class="bilgi-numara">02</span><h3>Geçmişte su vardı</h3><p>Kuru nehir yatakları, deltalar ve kutup buzulları Mars'ın geçmişte sıvı su barındırdığını gösterir. Bu izler yaşam araştırmalarının merkezindedir.</p></article>
-            <article class="bilgi-panel"><span class="bilgi-numara">03</span><h3>Dev volkanlar</h3><p>Olympus Mons, Güneş Sistemi'nin bilinen en büyük volkanıdır. Mars'ın düşük yerçekimi, bu dev yapıların oluşmasına izin vermiştir.</p></article>
-            <article class="bilgi-panel"><span class="bilgi-numara">04</span><h3>Koloni için öncelikler</h3><p>İlk ekipler su buzu çıkarma, enerji üretme, radyasyondan korunma ve kapalı tarım sistemleri üzerine çalışacak.</p></article>
-        </div>
+            <section id="yapay-zeka">
+                <h2>Tıpta Yapay Zeka</h2>
+                <p>Doktorlar artık hastalıkların teşhisinde büyük veri analizlerini kullanıyor. Bu sayede erken teşhis oranları inanılmaz derecede arttı.</p>
+            </section>
+
+            <section id="robotik">
+                <h2>Robotik Cerrahi</h2>
+                <p>Milimetrik hassasiyetle çalışan robot kollar, hata payını azaltarak cerrahlara daha kontrollü ve güvenli işlemler yapma imkanı sunuyor.</p>
+            </section>
+        </article>
+
+        <aside class="sidebar">
+            <p class="eyebrow">Ders Notu</p>
+            <h2>HTML5'in Akıllı Kutuları</h2>
+            <p>Semantic etiketler, sayfadaki bölümlerin görevini tarayıcılara, arama motorlarına ve ekran okuyucularına anlatır.</p>
+            <dl class="tag-list">
+                <div><dt>&lt;header&gt;</dt><dd>Üst bilgi</dd></div>
+                <div><dt>&lt;nav&gt;</dt><dd>Gezinme menüsü</dd></div>
+                <div><dt>&lt;main&gt;</dt><dd>Ana içerik</dd></div>
+                <div><dt>&lt;article&gt;</dt><dd>Bağımsız makale</dd></div>
+                <div><dt>&lt;aside&gt;</dt><dd>Yan bilgi</dd></div>
+                <div><dt>&lt;footer&gt;</dt><dd>Alt bilgi</dd></div>
+            </dl>
+        </aside>
     </main>
 
-    <section class="flight-console" aria-labelledby="flight-title">
-        <div class="console-heading">
-            <div>
-                <span class="section-kicker">INTERPLANETARY NAVIGATION / SIM-01</span>
-                <h2 id="flight-title">Mars'a uçuşu yönet</h2>
-            </div>
-            <span class="live-indicator"><i></i> SIMÜLASYON AKTİF</span>
-        </div>
-
-        <div class="mission-grid">
-            <div class="mission-map" aria-label="Dünya'dan Mars'a uçuş rotası">
-                <div class="map-grid"></div>
-                <div class="orbit-line earth-line"><span class="orbit-dot"></span></div>
-                <div class="orbit-line mars-line"><span class="orbit-dot"></span></div>
-                <div class="route-line"><span class="route-progress"></span><span class="ship-marker">◆</span></div>
-                <div class="world-node"><span>DÜNYA</span><b></b></div>
-                <div class="mars-node"><span>MARS</span><b></b></div>
-                <div class="map-readout">TRAYEKTÖR <strong id="trajectoryLabel">TRANSFER YÖRÜNGESİ</strong></div>
-            </div>
-
-            <div class="mission-panel">
-                <div class="mission-status"><span>DURUM</span><strong id="missionStatus">BEKLEMEDE</strong></div>
-                <div class="meter-block">
-                    <div><span>YAKIT REZERVİ</span><strong id="fuelValue">100%</strong></div>
-                    <div class="meter"><span id="fuelMeter"></span></div>
-                </div>
-                <div class="telemetry-grid">
-                    <div><span>MESAFE</span><strong id="distanceValue">225.0M km</strong></div>
-                    <div><span>HIZ</span><strong id="speedValue">0.0 km/s</strong></div>
-                    <div><span>UÇUŞ SÜRESİ</span><strong id="timeValue">00:00</strong></div>
-                    <div><span>GÜZERGAH</span><strong id="routeValue">HOHMANN</strong></div>
-                    <div><span>İRTİFA</span><strong id="altitudeValue">0 km</strong></div>
-                    <div><span>BAŞ YÖNÜ</span><strong id="headingValue">090°</strong></div>
-                </div>
-                <div class="control-group">
-                    <label for="flightMode">Navigasyon protokolü</label>
-                    <select id="flightMode">
-                        <option value="hohmann">Hohmann transferi</option>
-                        <option value="direct">Doğrudan itki</option>
-                        <option value="eco">Ekonomik seyir</option>
-                    </select>
-                </div>
-                <div class="flight-inputs">
-                    <label for="throttleControl">Gaz <output id="throttleValue">60%</output></label>
-                    <input id="throttleControl" type="range" min="0" max="100" value="60">
-                    <div class="heading-controls"><button type="button" id="yawLeft" disabled>← Yön</button><button type="button" id="yawRight" disabled>Yön →</button></div>
-                </div>
-                <div class="flight-actions">
-                    <button type="button" class="flight-primary" id="launchButton">Görevi başlat</button>
-                    <button type="button" id="thrustButton" disabled>İtki ver</button>
-                    <button type="button" id="brakeButton" disabled>Yavaşla</button>
-                    <button type="button" id="autopilotButton" disabled>Otopilot</button>
-                    <button type="button" class="flight-reset" id="resetFlightButton">Sıfırla</button>
-                </div>
-                <p class="mission-log" id="missionLog">Kontrol odası hazır. Görevi başlatıp rotanı seç.</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="alt-bilgi">
-        <p>Tasarımcı: droolbonded | Tüm Hakları Saklıdır © 2026</p>
-    </div>
-
-    <script src="muzik.js"></script>
+    <footer class="site-footer">
+        <p>Tüm hakları saklıdır &copy; 2024 - Geleceğin Teknolojileri Blogu</p>
+    </footer>
 </body>
 </html>
+            font-weight: 800;
